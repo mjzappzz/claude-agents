@@ -1,0 +1,17 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor temp files
+*.swp
+*.swo
+*~
+
+# Python cache
+__pycache__/
+*.pyc
+.env
+
+# Broken symlinks (point to external path not in this repo)
+ui-ux-pro-max/data
+ui-ux-pro-max/scripts

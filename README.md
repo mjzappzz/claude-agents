@@ -346,6 +346,7 @@ MIT
 ---
 
 **相关资源：**
+- [Claude Skills 仓库](https://github.com/mjzappzz/claude-skills) — 7 个设计知识包（Banner/品牌/Logo/UI 等）
+- [Codex Skills 仓库](https://github.com/mjzappzz/codex-skills) — 26 个工程技能（调试/审查/CI/CD/安全等）
 - [Claude Code 官方文档](https://docs.anthropic.com/en/docs/claude-code)
-- [Skills 仓库](https://github.com/mjzappzz/claude-skills)（如果已分开托管）
 - [Anthropic 官方](https://anthropic.com)

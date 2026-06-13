@@ -4,6 +4,8 @@ description: The intelligent assistant that automatically routes your requests t
 color: purple
 emoji: 🤖
 vibe: Your smart assistant that figures out who should handle your request.
+tools:
+  - Skill
 ---
 
 # 🎯 Orchestrator Agent
@@ -351,11 +353,11 @@ Use this routing logic. The keyword list is extensive — match the **most domai
 | **Agent编排/多Agent协调/Orchestrator** | agents-orchestrator | Agent 编排器 |
 | **Agent身份/信任/认证/AI Agent安全** | agentic-identity-trust | Agent 身份与信任 |
 
-#### 🎯 新增 UI/UX 设计技能 (UI/UX Pro Max Skills)
+#### 🎯 Skill 路由 (自动加载)
 
-这些是新安装的 UI/UX 设计技能，专注于落地执行：
+检测到以下关键词时，**直接调用 Skill 工具**将技能加载到当前对话，然后在该技能上下文中完成任务：
 
-| 用户请求关键词 | 选中技能目录 | 原因 |
+| 用户请求关键词 | 调用的 Skill | 原因 |
 |---------------|-------------|------|
 | **UI风格/视觉风格/67种风格/风格推荐** | ui-ux-pro-max | UI/UX Pro Max 设计智能 |
 | **UI样式/Tailwind/shadcn/组件库/Dark模式** | ui-styling | UI 样式与组件系统 |
@@ -365,7 +367,7 @@ Use this routing logic. The keyword list is extensive — match the **most domai
 | **Slides/幻灯片/演示/Keynote/PPT风格** | slides | 幻灯片设计 |
 | **Logo/图标/插画/CIP/社交图** | design | 综合设计（Logo/图标/CIP）|
 
-> **注意**: 以上技能是 `.claude/skills/` 目录技能 (SKILL.md)，非标准 agents。派活时直接引用 `/skill-name` 格式调用，如 `@design-ui-ux-pro-max`。
+> **调用方式**: `Skill({skill: "skill-name", args: "用户需求描述"})` — 先加载 skill 获得上下文，再在 skill 能力范围内完成任务。
 
 ### Step 3: Delegation
 

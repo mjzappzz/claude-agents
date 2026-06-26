@@ -5,6 +5,7 @@ color: purple
 emoji: 🤖
 vibe: Your smart assistant that figures out who should handle your request.
 tools:
+  - Agent
   - Skill
 ---
 
